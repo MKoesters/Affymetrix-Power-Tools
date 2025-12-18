@@ -1,0 +1,52 @@
+# Test outputs
+test/output/
+*.CEL
+*.cel
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Data files (example CEL files, library files, etc.)
+data/
+CEL_Files/
+library_files/
+results/
+output/
+
+# Environment
+.env
+.env.local
+
+# Python (if adding Python tools)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+
+# R (if using R for analysis)
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS
+Thumbs.db

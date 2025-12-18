@@ -1,0 +1,36 @@
+# Git files
+.git
+.gitignore
+.github
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test/
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# CI/CD
+.github/
+
+# License
+LICENSE
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
