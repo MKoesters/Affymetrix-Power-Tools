@@ -13,7 +13,7 @@ LABEL org.opencontainers.image.title="Affymetrix Power Tools" \
 
 # Build arguments
 ARG APT_VERSION=2.12.0
-ARG APT_DOWNLOAD_URL=https://downloads.thermofisher.com/Affymetrix_Softwares/APT/apt_2.12.0_linux_64_x86_binaries.zip
+ARG APT_DOWNLOAD_URL=https://downloads.thermofisher.com/APT/APT_2.12.0/apt_2.12.0_linux_64_x86_binaries.zip
 
 # Avoid interactive prompts during build
 ENV DEBIAN_FRONTEND=noninteractive
