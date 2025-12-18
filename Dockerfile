@@ -30,7 +30,8 @@ WORKDIR /opt
 RUN wget -q "${APT_DOWNLOAD_URL}" -O apt.zip && \
     unzip -q apt.zip && \
     rm apt.zip && \
-    mv apt_${APT_VERSION}_linux_64_x86_binaries apt && \
+    mkdir apt && \
+    mv bin apt && \
     chmod -R 755 /opt/apt/bin
 
 # Validate installation
