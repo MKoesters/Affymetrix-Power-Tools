@@ -120,7 +120,6 @@ jobs:
             type=semver,pattern={{major}}
             type=raw,value=2.12.0
             type=raw,value=latest,enable={{is_default_branch}}
-            type=sha,prefix={{branch}}-
           labels: |
             org.opencontainers.image.title=Affymetrix Power Tools
             org.opencontainers.image.description=Docker image for Affymetrix Power Tools 2.12.0
