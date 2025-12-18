@@ -134,10 +134,12 @@ fi
 
 # Test 9: Test platform architecture
 run_test "Testing platform architecture is amd64"
-if docker inspect "$IMAGE_NAME" | grep -q "linux/amd64"; then
-    log_success "Image architecture is linux/amd64"
+ARCH=$(docker inspect "$IMAGE_NAME" --format '{{.Architecture}}')
+OS=$(docker inspect "$IMAGE_NAME" --format '{{.Os}}')
+if [ "$ARCH" = "amd64" ] && [ "$OS" = "linux" ]; then
+    log_success "Image architecture is linux/amd64 (OS: $OS, Arch: $ARCH)"
 else
-    log_error "Image architecture is not linux/amd64"
+    log_error "Image architecture is not linux/amd64 (Found - OS: $OS, Arch: $ARCH)"
 fi
 
 # Test 10: Test shell access
